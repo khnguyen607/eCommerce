@@ -8,6 +8,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
 import { QuickViewModalComponent } from './components/quick-view-modal/quick-view-modal.component';
 import { ShopComponent } from './pages/shop/shop.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ProductDetailsComponent } from './pages/product-details/product-details.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import { ShopComponent } from './pages/shop/shop.component';
     FooterComponent,
     HomeComponent,
     QuickViewModalComponent,
-    ShopComponent
+    ShopComponent,
+    ProductDetailsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

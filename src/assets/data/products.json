@@ -3,90 +3,105 @@
         "id": 1,
         "img": "assets/images/product/s328/product-17.webp",
         "name": "3D Attractive Pot",
+        "description": "this product is very good",
         "price": "$90.00"
     },
     {
         "id": 2,
         "img": "assets/images/product/s328/product-14.webp",
         "name": "Abstract Folded Pots",
+        "description": "this product is very good",
         "price": "$50.00 - $55.00"
     },
     {
         "id": 3,
         "img": "assets/images/product/s328/product-30.webp",
         "name": "Adhesive Tape Dispenser",
+        "description": "this product is very good",
         "price": "$15.00"
     },
     {
         "id": 4,
         "img": "assets/images/product/s328/product-9.webp",
         "name": "Aluminum Equestrian",
+        "description": "this product is very good",
         "price": "$100.00"
     },
     {
         "id": 5,
         "img": "assets/images/product/s328/product-25.webp",
         "name": "Antique Sewing Scissors",
+        "description": "this product is very good",
         "price": "$15.00"
     },
     {
         "id": 6,
         "img": "assets/images/product/s328/product-1.webp",
         "name": "Boho Beard Mug",
+        "description": "this product is very good",
         "price": "$45.00"
     },
     {
         "id": 7,
         "img": "assets/images/product/s328/product-31.webp",
         "name": "Bouncer Measuring Cup",
+        "description": "this product is very good",
         "price": "$150.00"
     },
     {
         "id": 8,
         "img": "assets/images/product/s328/product-15.webp",
         "name": "Brush & Dustpan Set",
+        "description": "this product is very good",
         "price": "$9.00"
     },
     {
         "id": 9,
         "img": "assets/images/product/s328/product-12.webp",
         "name": "Cape Cottage Playhouse",
+        "description": "this product is very good",
         "price": "$35.00"
     },
     {
         "id": 10,
         "img": "assets/images/product/s328/product-32.webp",
         "name": "Cleaning Dustpan & Brush",
+        "description": "this product is very good",
         "price": "$38.00 - $50.00"
     },
     {
         "id": 11,
         "img": "assets/images/product/s328/product-6.webp",
         "name": "Clear Silicate Teapot",
+        "description": "this product is very good",
         "price": "$140.00"
     },
     {
         "id": 12,
         "img": "assets/images/product/s328/product-19.webp",
         "name": "Country Feast Set",
+        "description": "this product is very good",
         "price": "$45.00"
     },
     {
         "id": 13,
         "img": "assets/images/product/s328/product-8.webp",
         "name": "Decorative Christmas Fox",
+        "description": "this product is very good",
         "price": "$50.00"
     },
     {
         "id": 14,
         "img": "assets/images/product/s328/product-28.webp",
         "name": "Digital Camera System",
+        "description": "this product is very good",
         "price": "$350.00"
     },
     {
         "id": 15,
         "img": "assets/images/product/s328/product-11.webp",
         "name": "Electric Egg Blender",
+        "description": "this product is very good",
         "price": "$200.00"
     }
 ]
