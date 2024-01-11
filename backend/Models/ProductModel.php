@@ -26,4 +26,17 @@ class ProductModel extends BaseModel
         return $this->create(self::TABLE, $data);
     }
 
+    // CÁC PHƯƠNG THỨC BỔ SUNG
+    public function getProductsByKeyword($keyword) {
+        $table = self::TABLE;
+        $sql = "SELECT * FROM $table WHERE LOWER(`name`) LIKE LOWER('%$keyword%')";
+        $query = $this->_query($sql);
+        $data = [];
+
+        while ($row = mysqli_fetch_assoc($query)) {
+            array_push($data, $row);
+        }
+
+        return $data;
+    }
 }

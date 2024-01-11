@@ -17,4 +17,9 @@ export class ProductsService {
     var apiUrl = '/callapi?controller=category';
     return this.http.get(apiUrl);
   }
+
+  searchProducts(keyword:string): Observable<any> {
+    var apiUrl = '/callapi?controller=product&action=search&q='+keyword;
+    return this.http.get(apiUrl);
+  }
 }
