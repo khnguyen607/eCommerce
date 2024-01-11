@@ -1,6 +1,6 @@
 {
     "/callapi": {
-      "target": "http://localhost:3000/backend/index.php",
+      "target": "http://localhost:8000/index.php",
       "secure": false
     }
   }

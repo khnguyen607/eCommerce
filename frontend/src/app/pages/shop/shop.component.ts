@@ -7,6 +7,8 @@ import { ProductsService } from '../../services/products.service';
 })
 export class ShopComponent implements OnInit {
   products: any;
+  category: any;
+  
 
   constructor(
     private productService: ProductsService,
@@ -15,25 +17,29 @@ export class ShopComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.productService.getProducts('controller=product').subscribe(data => {
+    this.productService.getProducts().subscribe(data => {
       this.products = data;
+    });
+
+    this.productService.getCategory().subscribe(data => {
+      this.category = data;
     });
   }
 
-  find_product(fill_type: any): void {
-    var Items = this.el.nativeElement.querySelectorAll('.grid-item');
-    switch (fill_type) {
-      case 'hide_all':
-        Items.forEach((Item: any) => {
-          this.renderer.setStyle(Item, 'display', 'none');
-        });
+  activeIndex: any;
+  find_product(category: string, index: number) {
+    switch (category) {
+      case 'alls':
+        this.renderer.addClass(this.el.nativeElement.querySelector('.shop-product-filter .alls'), 'active');
+        this.renderer.removeClass(this.el.nativeElement.querySelector('.shop-product-filter .category.active'), 'active');
+        this.products = this.productService.getProducts();
         break;
       default:
-        Items.forEach((Item: any) => {
-          this.renderer.setStyle(Item, 'display', 'block');
-        });
+        this.renderer.removeClass(this.el.nativeElement.querySelector('.shop-product-filter .alls'), 'active');
+        this.activeIndex = index;
         break;
     }
+    
   }
 
   sortProducts(sortOption: any) {

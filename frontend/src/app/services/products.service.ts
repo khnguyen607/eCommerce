@@ -8,8 +8,13 @@ import { Observable } from 'rxjs';
 export class ProductsService {
   constructor(private http: HttpClient) { }
 
-  getProducts(params:string): Observable<any> {
-    var apiUrl = '/callapi?'+params;
+  getProducts(): Observable<any> {
+    var apiUrl = '/callapi?controller=product';
+    return this.http.get(apiUrl);
+  }
+
+  getCategory(): Observable<any> {
+    var apiUrl = '/callapi?controller=category';
     return this.http.get(apiUrl);
   }
 }

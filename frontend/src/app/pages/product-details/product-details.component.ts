@@ -11,7 +11,7 @@ export class ProductDetailsComponent implements OnInit {
   constructor(private productService: ProductsService) { }
 
   ngOnInit(): void {
-    this.productService.getProducts('controller=product').subscribe(data => {
+    this.productService.getProducts().subscribe(data => {
       let id: any = new URLSearchParams(window.location.search).get('id')
       this.product = data.find((p: { id: number; }) => p.id == id);
     });
